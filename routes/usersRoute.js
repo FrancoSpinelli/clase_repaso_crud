@@ -1,8 +1,11 @@
 const express = require('express');
 const router = express.Router()
 
+// REQUERIMOS EL CONTROLADOR PARA DESPUES ACCEDER A SUS METODOS
 const usersController = require("../controllers/usersController")
 
+
+// CONFIFURACION DE RUTAS Y METODOS
 
 // CREATE
 router.get('/register', usersController.register);
